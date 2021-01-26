@@ -25,9 +25,9 @@ elseif Net == "Full" then
 		settings().Physics.AllowSleep = false
 		settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
 		game:GetService("Players").LocalPlayer.ReplicationFocus = workspace
-		SS(math.huge,math.huge,math.huge,math.huge)
-		SH(game.Players.LocalPlayer, "MaximumSimulationRadius",math.huge)
-		SH(game.Players.LocalPlayer, "SimulationRadius",math.huge,math.huge,math.huge,math.huge)
+		SS(math.huge*math.huge,math.huge*math.huge,math.huge*math.huge,math.huge*math.huge)
+		SH(game.Players.LocalPlayer, "MaximumSimulationRadius",math.huge*math.huge)
+		SH(game.Players.LocalPlayer, "SimulationRadius",math.huge*math.huge,math.huge*math.huge,math.huge*math.huge,math.huge*math.huge)
 		game:GetService("RunService").Heartbeat:Wait()
 	end) 
 end
